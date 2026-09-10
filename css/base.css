@@ -1,0 +1,138 @@
+/* ============================================
+   BASE — Typography & Global Styles
+   ============================================ */
+
+body {
+  font-family: var(--f-sans);
+  font-size: var(--ts-base);
+  font-weight: var(--fw-regular);
+  line-height: var(--lh-normal);
+  color: var(--c-text);
+  background-color: var(--c-bg);
+  background-image:
+    linear-gradient(var(--c-grid) 1px, transparent 1px),
+    linear-gradient(90deg, var(--c-grid) 1px, transparent 1px);
+  background-size: var(--grid-size) var(--grid-size);
+  background-attachment: fixed;
+}
+
+/* ── Headings ── */
+
+.h-display {
+  font-size: var(--ts-6xl);
+  font-weight: var(--fw-bold);
+  line-height: var(--lh-tight);
+  letter-spacing: -0.02em;
+}
+
+.h1 {
+  font-size: var(--ts-5xl);
+  font-weight: var(--fw-bold);
+  line-height: var(--lh-tight);
+  letter-spacing: -0.02em;
+}
+
+.h2 {
+  font-size: var(--ts-4xl);
+  font-weight: var(--fw-bold);
+  line-height: var(--lh-snug);
+  letter-spacing: -0.015em;
+}
+
+.h3 {
+  font-size: var(--ts-3xl);
+  font-weight: var(--fw-semibold);
+  line-height: var(--lh-heading);
+  letter-spacing: -0.01em;
+}
+
+.h4 {
+  font-size: var(--ts-2xl);
+  font-weight: var(--fw-semibold);
+  line-height: var(--lh-heading);
+}
+
+.h5 {
+  font-size: var(--ts-xl);
+  font-weight: var(--fw-medium);
+  line-height: var(--lh-heading);
+}
+
+/* ── Text Styles ── */
+
+.text-body {
+  font-size: var(--ts-md);
+  line-height: var(--lh-relaxed);
+  color: var(--c-text-secondary);
+}
+
+.text-sm {
+  font-size: var(--ts-sm);
+  line-height: var(--lh-normal);
+}
+
+.text-lg {
+  font-size: var(--ts-lg);
+  line-height: var(--lh-relaxed);
+}
+
+/* ── Monospace ── */
+
+.mono {
+  font-family: var(--f-mono);
+  font-size: var(--ts-xs);
+  font-weight: var(--fw-regular);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.mono-sm {
+  font-family: var(--f-mono);
+  font-size: var(--ts-2xs);
+  font-weight: var(--fw-regular);
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+/* ── Links ── */
+
+.link {
+  color: var(--c-accent);
+  transition: color var(--t-fast);
+}
+
+.link:hover {
+  color: var(--c-accent-hover);
+}
+
+.link-underline {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  text-decoration-color: var(--c-border);
+  transition: text-decoration-color var(--t-fast);
+}
+
+.link-underline:hover {
+  text-decoration-color: var(--c-text);
+}
+
+/* ── Horizontal Rule ── */
+
+.divider {
+  border: none;
+  border-top: 1px solid var(--c-border);
+}
+
+/* ── Screen Reader Only ── */
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}

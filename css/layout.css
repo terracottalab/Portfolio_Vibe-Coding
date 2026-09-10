@@ -1,0 +1,108 @@
+/* ============================================
+   LAYOUT — Containers & Grid
+   ============================================ */
+
+.container {
+  width: 100%;
+  max-width: var(--max-w);
+  margin-inline: auto;
+  padding-inline: var(--container-px);
+}
+
+.container--narrow {
+  max-width: var(--max-w-narrow);
+}
+
+/* ── Section ── */
+
+.section {
+  padding-block: var(--section-py);
+  border-top: 1px solid var(--c-border);
+  position: relative;
+}
+
+/* ── Section Header ── */
+
+.section-header {
+  display: flex;
+  align-items: baseline;
+  gap: var(--s-16);
+  margin-bottom: var(--s-64);
+}
+
+.section-number {
+  font-family: var(--f-mono);
+  font-size: var(--ts-xs);
+  color: var(--c-text-tertiary);
+  letter-spacing: 0.05em;
+  flex-shrink: 0;
+}
+
+.section-title {
+  font-size: var(--ts-xs);
+  font-family: var(--f-mono);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--c-text-tertiary);
+}
+
+/* ── Grid Utilities ── */
+
+.grid {
+  display: grid;
+  gap: var(--grid-gap);
+}
+
+.grid--2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid--3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.grid--4 {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.grid--asymmetric {
+  grid-template-columns: 1.4fr 1fr;
+}
+
+.grid--asymmetric-reverse {
+  grid-template-columns: 1fr 1.4fr;
+}
+
+/* ── Flex Utilities ── */
+
+.flex {
+  display: flex;
+}
+
+.flex--between {
+  justify-content: space-between;
+}
+
+.flex--center {
+  align-items: center;
+}
+
+.flex--column {
+  flex-direction: column;
+}
+
+.flex--wrap {
+  flex-wrap: wrap;
+}
+
+.flex--gap-sm {
+  gap: var(--s-8);
+}
+
+.flex--gap-md {
+  gap: var(--s-16);
+}
+
+.flex--gap-lg {
+  gap: var(--s-32);
+}

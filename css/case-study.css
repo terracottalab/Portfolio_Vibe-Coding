@@ -1,0 +1,227 @@
+/* ============================================
+   CASE STUDY — Project detail page
+   ============================================ */
+
+.cs-hero {
+  padding-top: calc(var(--nav-h) + var(--s-80));
+  padding-bottom: var(--s-64);
+  border-bottom: 1px solid var(--c-border);
+}
+
+.cs-hero__back {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--s-8);
+  font-family: var(--f-mono);
+  font-size: var(--ts-xs);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--c-text-tertiary);
+  margin-bottom: var(--s-48);
+  transition: color var(--t-fast);
+}
+
+.cs-hero__back:hover {
+  color: var(--c-text);
+}
+
+.cs-hero__meta {
+  display: flex;
+  align-items: center;
+  gap: var(--s-24);
+  margin-bottom: var(--s-24);
+}
+
+.cs-hero__number {
+  font-family: var(--f-mono);
+  font-size: var(--ts-sm);
+  color: var(--c-text-tertiary);
+  letter-spacing: 0.05em;
+}
+
+.cs-hero__category {
+  font-family: var(--f-mono);
+  font-size: var(--ts-2xs);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--c-text-tertiary);
+}
+
+.cs-hero__title {
+  font-size: clamp(var(--ts-3xl), 4vw, var(--ts-5xl));
+  font-weight: var(--fw-bold);
+  line-height: var(--lh-tight);
+  letter-spacing: -0.02em;
+  margin-bottom: var(--s-24);
+}
+
+.cs-hero__desc {
+  font-size: var(--ts-md);
+  line-height: var(--lh-relaxed);
+  color: var(--c-text-secondary);
+  max-width: 60ch;
+}
+
+/* ── Case Study Content ── */
+
+.cs-content {
+  padding-block: var(--s-80);
+}
+
+.cs-block {
+  margin-bottom: var(--s-64);
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  gap: var(--s-32);
+  max-width: var(--max-w-narrow);
+}
+
+.cs-block:last-child {
+  margin-bottom: 0;
+}
+
+.cs-block--wide {
+  max-width: 100%;
+}
+
+.cs-block__label {
+  font-family: var(--f-mono);
+  font-size: var(--ts-xs);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--c-text-tertiary);
+  padding-top: 4px;
+}
+
+.cs-block__body {
+  font-size: var(--ts-md);
+  line-height: var(--lh-relaxed);
+  color: var(--c-text-secondary);
+}
+
+.cs-block__body ul {
+  display: flex;
+  flex-direction: column;
+  gap: var(--s-8);
+}
+
+.cs-block__body li {
+  padding-left: var(--s-20);
+  position: relative;
+}
+
+.cs-block__body li::before {
+  content: '—';
+  position: absolute;
+  left: 0;
+  color: var(--c-text-tertiary);
+}
+
+/* ── Gallery ── */
+
+.cs-gallery {
+  margin-block: var(--s-64);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--s-24);
+}
+
+.cs-gallery__item {
+  border: 1px solid var(--c-border);
+  overflow: hidden;
+  background: var(--c-bg-alt);
+}
+
+.cs-gallery__item img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* ── Live Project Link ── */
+
+.cs-live {
+  padding-block: var(--s-48);
+  border-top: 1px solid var(--c-border);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.cs-live__label {
+  font-family: var(--f-mono);
+  font-size: var(--ts-xs);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--c-text-tertiary);
+}
+
+/* ── Project Navigation ── */
+
+.cs-nav {
+  padding-block: var(--s-48);
+  border-top: 1px solid var(--c-border);
+  display: flex;
+  justify-content: space-between;
+}
+
+.cs-nav__item {
+  display: flex;
+  flex-direction: column;
+  gap: var(--s-8);
+}
+
+.cs-nav__item--next {
+  text-align: right;
+}
+
+.cs-nav__label {
+  font-family: var(--f-mono);
+  font-size: var(--ts-2xs);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--c-text-tertiary);
+}
+
+.cs-nav__title {
+  font-size: var(--ts-lg);
+  font-weight: var(--fw-medium);
+  transition: color var(--t-fast);
+}
+
+.cs-nav__item:hover .cs-nav__title {
+  color: var(--c-accent);
+}
+
+
+/* ── Case Study Responsive ── */
+
+@media (max-width: 768px) {
+  .cs-hero {
+    padding-top: calc(var(--nav-h) + var(--s-48));
+  }
+
+  .cs-block {
+    grid-template-columns: 1fr;
+    gap: var(--s-12);
+  }
+
+  .cs-gallery {
+    grid-template-columns: 1fr;
+  }
+
+  .cs-live {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--s-16);
+  }
+
+  .cs-nav {
+    flex-direction: column;
+    gap: var(--s-32);
+  }
+
+  .cs-nav__item--next {
+    text-align: left;
+  }
+}
