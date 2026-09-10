@@ -18,7 +18,7 @@
     ['.hero__role', 0,
       'AI & Digital Builder'],
     ['.hero__heading', 0,
-      'I\u00a0bring ideas and\u00a0complex processes to\u00a0life as\u00a0working digital\u00a0products.'],
+      'I\u00a0bring ideas to\u00a0life and\u00a0optimize complex processes into working digital\u00a0solutions.'],
     ['.hero__subheading', 0,
       'Websites, AI\u2011tools, apps and automations\u00a0\u2014 from structure and logic to\u00a0a\u00a0working prototype.'],
     ['.hero__note', 0,
