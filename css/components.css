@@ -278,3 +278,65 @@
   flex-shrink: 0;
   margin-top: 3px;
 }
+
+
+/* ── Theme Toggle ── */
+
+.theme-toggle {
+  width: 36px;
+  height: 36px;
+  display: grid;
+  place-items: center;
+  border: 1px solid var(--c-border);
+  border-radius: 50%;
+  background: transparent;
+  cursor: pointer;
+  transition:
+    border-color var(--t-fast),
+    background var(--t-fast);
+  flex-shrink: 0;
+}
+
+.theme-toggle:hover {
+  border-color: var(--c-text-tertiary);
+  background: var(--c-bg-alt);
+}
+
+.theme-toggle__icon {
+  width: 18px;
+  height: 18px;
+  stroke: var(--c-text-secondary);
+  fill: none;
+  stroke-width: 1.5;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  transition:
+    stroke var(--t-fast),
+    opacity 300ms ease,
+    transform 300ms ease;
+  grid-area: 1 / 1;
+}
+
+.theme-toggle:hover .theme-toggle__icon {
+  stroke: var(--c-text);
+}
+
+.theme-toggle__sun {
+  opacity: 1;
+  transform: rotate(0deg) scale(1);
+}
+
+.theme-toggle__moon {
+  opacity: 0;
+  transform: rotate(-90deg) scale(0.6);
+}
+
+[data-theme="dark"] .theme-toggle__sun {
+  opacity: 0;
+  transform: rotate(90deg) scale(0.6);
+}
+
+[data-theme="dark"] .theme-toggle__moon {
+  opacity: 1;
+  transform: rotate(0deg) scale(1);
+}

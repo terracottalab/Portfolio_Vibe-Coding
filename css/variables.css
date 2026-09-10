@@ -99,4 +99,32 @@
   --z-base:    1;
   --z-nav:     100;
   --z-overlay: 200;
+
+  /* ── Theme transition ── */
+  --t-theme: 400ms ease;
+}
+
+
+/* ============================================
+   DARK THEME
+   ============================================ */
+
+[data-theme="dark"] {
+  --c-bg:             #1A1A1E;
+  --c-bg-alt:         #232328;
+  --c-surface:        #2A2A30;
+  --c-text:           #E8E6E1;
+  --c-text-secondary: #A8A4A0;
+  --c-text-tertiary:  #706C68;
+  --c-accent:         #D4765E;
+  --c-accent-light:   #E08A70;
+  --c-accent-hover:   #C4654A;
+  --c-terracotta:     #D4765E;
+  --c-terracotta-hover: #E08A70;
+  --c-border:         #3A3838;
+  --c-border-light:   #2F2D2D;
+  --c-grid:           rgba(100, 95, 88, 0.06);
+  --c-tag-bg:         rgba(212, 118, 94, 0.12);
+  --c-status-live:    #5AAF66;
+  --c-status-dev:     #D4A844;
 }

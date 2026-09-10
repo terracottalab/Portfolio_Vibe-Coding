@@ -23,6 +23,10 @@
     display: flex;
   }
 
+  .nav__right {
+    gap: var(--s-12);
+  }
+
   .nav__lang {
     display: flex;
   }

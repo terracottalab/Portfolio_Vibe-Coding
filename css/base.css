@@ -14,6 +14,9 @@ body {
     linear-gradient(90deg, var(--c-grid) 1px, transparent 1px);
   background-size: var(--grid-size) var(--grid-size);
   background-attachment: fixed;
+  transition:
+    background-color var(--t-theme),
+    color var(--t-theme);
 }
 
 /* ── Headings ── */

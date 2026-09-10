@@ -17,7 +17,11 @@
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
   border-bottom: 1px solid var(--c-border);
-  transition: background var(--t-base);
+  transition: background var(--t-base), border-color var(--t-theme);
+}
+
+[data-theme="dark"] .nav {
+  background: rgba(26, 26, 30, 0.92);
 }
 
 .nav__inner {
@@ -163,6 +167,10 @@
   transition:
     opacity var(--t-medium),
     visibility var(--t-medium);
+}
+
+[data-theme="dark"] .nav-overlay {
+  background: rgba(26, 26, 30, 0.98);
 }
 
 .nav-overlay.active {
@@ -880,4 +888,18 @@ a.contact__link-value:hover {
 .reveal-line.visible {
   opacity: 1;
   transform: translateY(0);
+}
+
+
+/* ─────────────────────────────────────────────
+   DARK THEME — Section overrides
+   ───────────────────────────────────────────── */
+
+[data-theme="dark"] .project-card:hover {
+  box-shadow: 0 8px 40px rgba(0, 0, 0, 0.25);
+}
+
+[data-theme="dark"] ::selection {
+  background: var(--c-accent);
+  color: #1A1A1E;
 }
