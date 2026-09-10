@@ -34,18 +34,22 @@
 
     /* ── Project 02 ── */
     ['.project-card__desc', 1,
-      'Personal landing page for an\u00a0expert. A\u00a0website built around professional journey, expertise and trust in\u00a0personal brand.'],
+      'A\u00a0light landing page for ordering Norwich Terrier puppies. Litter information, booking conditions, photos and contact form for potential owners.'],
 
     /* ── Project 03 ── */
     ['.project-card__desc', 2,
-      'Web\u2011tool for analyzing and structuring construction estimates. User uploads an\u00a0estimate\u00a0\u2014 the system breaks down items by\u00a0work type and displays the budget structure.'],
+      'Personal landing page for an\u00a0expert. A\u00a0website built around professional journey, expertise and trust in\u00a0personal brand.'],
 
     /* ── Project 04 ── */
     ['.project-card__desc', 3,
-      'A\u00a0concept for a\u00a0personal system for managing university studies: disciplines, materials, lectures, assignments, deadlines, progress and AI\u2011assistant in\u00a0a\u00a0single workspace.'],
+      'Web\u2011tool for analyzing and structuring construction estimates. User uploads an\u00a0estimate\u00a0\u2014 the system breaks down items by\u00a0work type and displays the budget structure.'],
 
     /* ── Project 05 ── */
     ['.project-card__desc', 4,
+      'A\u00a0university graduation project in\u00a0psychology. Digital platform for research, data structuring and visualization of\u00a0results within the thesis work.'],
+
+    /* ── Project 06 ── */
+    ['.project-card__desc', 5,
       'A\u00a0concept for a\u00a0personal system for managing tasks, finances and administrative processes. Tasks, calendar, deadlines, income &\u00a0expenses, taxes, invoices, reminders\u00a0\u2014 all processes in\u00a0one system.'],
 
     /* ── About ── */
